@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Falling Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="header">
+            <div id="stopwatch">⏳ 0</div>
+            <div id="question">? ➕ ? = ?</div>
+            <div id="score">⭐ Score: 0</div>
+        </div>
+
+        <div id="falling-container"></div>
+
+        <!-- First Row: Operation & Level Buttons -->
+        <div id="buttons-row-1">
+            <button onclick="changeOperation('+')">➕</button>
+            <button onclick="changeOperation('-')">➖</button>
+            <button onclick="changeOperation('*')">✖️</button>
+            <button onclick="changeOperation('/')">➗</button>
+            <button onclick="setLevel(5)">Level 1</button>
+            <button onclick="setLevel(3)">Level 2</button>
+            <button onclick="setLevel(2)">Level 3</button>
+        </div>
+
+        <!-- Second Row: Game Control Buttons -->
+        <div id="buttons-row-2">
+            <button onclick="startGame()">▶ Start</button>
+            <button onclick="stopGame()">⏹ Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
